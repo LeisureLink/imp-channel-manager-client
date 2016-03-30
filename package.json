@@ -1,0 +1,43 @@
+{
+  "name": "@leisurelink/imp-channel-manager-client",
+  "version": "1.1.2",
+  "main": "lib/client.js",
+  "scripts": {
+    "pretest": "esw --quiet",
+    "test": "mocha test --recursive --compilers js:babel-core/register",
+    "test:watch": "mocha test -w",
+    "build": "babel src/ -s inline -d lib/",
+    "prepublish": "npm run build",
+    "ci": "npm test",
+    "lint": "esw --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:LeisureLink/imp-channel-manager-client.git"
+  },
+  "dependencies": {
+    "@leisurelink/svcutils": "^0.2.3",
+    "@leisurelink/trusted-client": "^1.0.1",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "@leisurelink/mock-authentic-api": "^1.0.5",
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.6.5",
+    "babel-eslint": "^5.0.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015-node4": "^2.0.3",
+    "babel-preset-stage-3": "^6.5.0",
+    "babel-runtime": "^6.5.0",
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-config-leisurelink": "^1.0.1",
+    "eslint-watch": "^2.1.5",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "nock": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=4.0"
+  }
+}
