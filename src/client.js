@@ -42,6 +42,6 @@ ImpChannelManagerClient.prototype = {
  * @param baseUrl
  * @returns {ImpChannelManagerClient}
  */
-export let createChannelManagerClientClient = (baseUrl)=>{
+export let createChannelManagerClient = (baseUrl)=>{
   return new ImpChannelManagerClient(baseUrl);
 };
